@@ -7,13 +7,13 @@ class Card:
         self.suit = suit
         self.visibility = visibility
         
-        if 1< id< 10:
+        if 1< id<= 10:
             self.name = name + "of " + suit
         
         else:
             self.name = "{name} of ".format(name = ("Ace" if id == 1 else "Jack" if id ==11 else "Queen" if id == 12 else "King")) + suit
 
-        if 1<id<10:
+        if 1<id<=10:
             self.value = id
         elif id == 1:
             value == 11
